@@ -1,0 +1,265 @@
+/* @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+html {
+  background: #fff;
+  overflow-y: scroll; 
+} */
+
+:root {
+  --slidercolor: #286422
+}
+
+
+body{
+        /* overflow: hidden; */
+        height: 100%;
+        font: .875em/1.6 'Inconsolata', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* form{
+    z-index: 1;
+} */
+
+canvas{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+
+/* CANVAS ENDS HERE */
+/* 
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+html {
+  background: #fff;
+  overflow-y: scroll; 
+}
+
+body {
+  font: .875em/1.6 'Inconsolata', monospace;
+  color:#000;
+  font-weight: 400;
+  max-width: 28em;
+  padding: 1em;
+  margin: 5% 0; 
+}
+::selection{
+  background: #eee
+}
+::-webkit-selection{
+  background: #eee
+}
+::-moz-selection{
+  background: #eee
+}
+a{
+    color:#000;
+}
+a:hover,a:focus{
+  background: #181818;
+  color:#000;
+}
+h2{
+  font-size: 1em;
+  font-weight: 400;
+}
+p{
+  margin-bottom:2em;
+}
+abbr{
+  cursor: help;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin:1em 0 0;
+}
+span{
+  display: block;
+  color:#000;
+  line-height:1;
+}
+
+kbd{
+  font-family: 'Inconsolata', monospace;
+  border:1px solid #999;
+  text-transform: uppercase;
+  padding:0 .2em;
+}
+input[type="text"]{
+  max-width: 10em;
+  border: none;
+  font-family: inherit;
+  background: #fff;
+  padding:0 .5em;
+}
+input[type="text"]:focus{
+  background: #fff;
+  color:#000;
+  outline:none;
+}
+.command{
+  display: block;
+  max-width: 20em;
+  color:#000;
+  font-weight: 700;
+  margin: 2em 0;
+}
+
+
+section{
+  display: none;
+}
+.open{
+  display: block;
+} */
+
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eee;
+
+  }
+  
+  .console {
+    /* font-family: 'Fira Mono'; */
+    width: 700px;
+    height: 550px;
+    box-sizing: border-box;
+    margin: auto;
+
+  }
+  
+  .console header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #555;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    /* color: #DDD; */
+    color:lightgreen;
+
+  }
+  
+  .console .consolebody {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
+    height: calc(100% - 40px);
+    opacity: 90%;
+    /* overflow: scroll; */
+    /* overflow-x: scroll; */
+    background-color: #000;
+    color: #63de00;
+    /* font: .875em/1.6 'Inconsolata', monospace; */
+}
+
+/* ########## SLIDER RANGE COLORING ########## */
+/*Chrome*/
+input[type="range"] {
+  /* background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%); */
+  background: var(--slidercolor);
+  border: solid 1px #82CFD0;
+  border-radius: 8px;
+  height: 7px;
+  width: 256px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+input[type="range" i] {
+  /* background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #fff 50%, #fff 100%); */
+color: white;
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+background-color: var(--slidercolor);
+}
+input[type="range"]::-moz-range-track {  
+background-color: var(--slidercolor);
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+background-color: var(--slidercolor); 
+}
+input[type="range"]::-ms-fill-upper {  
+background-color: var(--slidercolor);
+}
+/* ########## SLIDER RANGE COLORING ########## */
+
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #5e5b5b; 
+
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#63de00 ; 
+
+  }
+  
+  .console .consolebody p {
+    line-height: 1.5rem;
+  }
+
+input, textarea{
+      background-color: #000;
+      border: none;
+      color: #63de00;
+      /* height: 10px; */
+      font: .875em/1.6 'Inconsolata', monospace;
+
+}
+/* #number{
+    background-color: rgba(160, 158, 158, 0.603);
+} */
+.number{
+  background-color: #2d7426;
+  color:white;
+  width: 40px;
+  text-align: center;
+}
+
+#terminal {
+  height: inherit;
+}
+
+/* Allows changing of text color */
+.terminal .xterm-rows {
+  color:white;
+
+}
+
+#nickname, .radio, #passwordinput, #mail, #website, #phone, .number, .securityrank, #address, .checkbox, .subnetMask{
+  display: none;
+}
+
+form{
+  height:0px;
+}

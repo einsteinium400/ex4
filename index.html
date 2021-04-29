@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js'></script>
+
+    <!-- NEW TERMINAL -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xterm/2.9.2/xterm.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <script src="js/xterm-2.9.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/2.9.2/addons/fit/fit.js"></script>
+    <script src="js/local-echo-0.2.0.js"></script>
+    <!-- <script
+        src="https://cdn.rawgit.com/wavesoft/local-echo/7ee165d2c955fe07623b5d74f6dda3ae18815ba4/dist/local-echo.js"></script> -->
+    <!-- NEW TERMINAL -->
+    <script src="js/matrix.js"></script>
+    <script src="js/terminal.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="console">
+        <header>
+            <p>root@Shenkar</p>
+        </header>
+
+        <div class="consolebody">
+            <div id="terminal">
+
+                <!-- <p id="demo"></p> -->
+                <!-- <p>> $ Hello hacker x.<br>
+                > $ If you found this page,
+                it means we will check your skills to join Shenkar's software engineers team.<br>
+                > $ Please keep this whole process discrete and make sure you have a hoodie. -->
+
+                <!-- </p> -->
+
+                <form id="myForm" action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="get"
+                    autocomplete="on">
+
+                    <input type="text" name="fullName" id="nickname"><br>
+
+                    <input type="radio" class="radio" name="gender" value="Chrome" id="rdChrome" checked>
+                    <label class="radio" for="rdChrome"> Chrome | </label>
+                    <input type="radio" class="radio" name="gender" value="Firefox" id="rdFirefox" checked>
+                    <label class="radio" for="rdFirefox"> Firefox </label>
+
+                    <input type="password" name="pass" id="passwordinput">
+
+                    <input type="email" name="mail" id="mail"><br>
+
+                    <input type="url" name="website" id="website"><br>
+
+                    <input type="tel" name="phone" id="phone"><br>
+
+                    <input class="number" type="number" value="0" name="coffee"><br>
+
+
+                    <input type="range" name="temper" class="securityrank"><br>
+
+                    <input type="text" name="address" id="address"><br>
+
+
+                    <!-- Interests checkbox -->
+                    <input type="checkbox" class="checkbox" name="interests[]" value="C" id="c">
+                    <label class="checkbox" for="c"> C | </label>
+                    <input type="checkbox" class="checkbox" name="interests[]" value="C++" id="c++">
+                    <label class="checkbox" for="c++"> C++ | </label>
+                    <input type="checkbox" class="checkbox" name="interests[]" value="Javascript" id="js">
+                    <label class="checkbox" for="js"> Javascript | </label>
+
+                    <select class="subnetMask" name="age">
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                    </select>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:crimson;
+}
+
+h1{
+    color:coral;
+}
+
+.btn-primary{
+    background-color: palevioletred;
+}
+
+body{
+    width: 600px;
+    height: 400px;
+    margin:auto;
+    position: relative;
+    top:70px;
+    background-color: peachpuff;
+}
+
+/* .xterm-rows{
+    width:10px;
+} */
