@@ -19,7 +19,7 @@ var mailReg = /.*@.*\..*/
 var urlreg = /[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?/; //ALERT
 
 
-var longOpening = 'Hello hacker x.\r\nIf you found that page, it means we will check your skills to join\r\nShenkar software engineers team.\r\nPlease keep the whole process discrete and make sure you have a hoodie.\r\nGood luck.          \r\n';
+var longOpening = 'Hello hacker x.\r\nIf you found that page, it means we will check your skills to join\r\nShenkar software engineers team.\r\nPlease keep the whole process discrete and make sure you have a hoodie.\r\nGood luck.                                                                                          \r\n';
 var opening = "hello\r\n";
 var questions = [{
     //NAME
